@@ -1,0 +1,241 @@
+
+
+/* ================================
+   MEGA MENU - CALENDAR DROP (GỘP 1 CHỖ)
+   - .mega-inner  : DESTINATIONS (ảnh + chữ)
+   - .mega-inner1 : ABOUT (list text)
+================================ */
+
+/* không bị cắt */
+.header, .nav, .nav-item { overflow: visible; }
+.nav-item.has-mega { position: relative; }
+
+/* popup container */
+.nav-item.has-mega .mega{
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  max-width: 92vw;
+  padding-top: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  perspective: 1800px;
+  z-index: 99999;
+}
+
+/* cầu nối hover */
+.nav-item.has-mega::after{
+  content:"";
+  position:absolute;
+  left:-24px; right:-24px;
+  top:100%;
+  height: 24px;
+}
+
+/* mũi tên */
+.nav-item.has-mega .mega::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:-7px;
+  width:14px;height:14px;
+  background:#fff;
+  transform: translateX(-50%) rotate(45deg) translateY(100%);
+  border-left:1px solid rgba(0,0,0,.12);
+  border-top:1px solid rgba(0,0,0,.12);
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+
+/* panel trắng: dùng chung */
+.nav-item.has-mega .mega-inner,
+.nav-item.has-mega .mega-inner1{
+  position: relative;
+  margin-top: 10px;
+
+  background:#fff;
+  border:1px solid rgba(0,0,0,.12);
+  box-shadow:0 18px 40px rgba(0,0,0,.25);
+
+  padding: 4px;
+  border-radius: 12px;
+  overflow: hidden;
+
+  transform-origin: top center;
+  transform: rotateX(-85deg) translateY(-14px);
+  opacity: 0;
+
+  transition:
+    transform .34s cubic-bezier(.2,.85,.2,1),
+    opacity .22s ease;
+
+  will-change: transform, opacity;
+}
+
+/* ánh sáng */
+.nav-item.has-mega .mega-inner::before,
+.nav-item.has-mega .mega-inner1::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,0) 35%),
+    radial-gradient(900px 60px at 50% 0%, rgba(0,0,0,.18), transparent 70%);
+  opacity:.30;
+}
+
+/* ===== LAYOUT: DESTINATIONS ===== */
+.nav-item.has-mega .mega-inner{
+  display: grid;
+  grid-template-columns: repeat(4, 160px); /* ✅ khớp size bạn set */
+  gap: 4px;
+  width: max-content; /* panel ôm grid */
+  max-width: 92vw;
+}
+
+/* card ảnh */
+.nav-item.has-mega .mega-inner .mega-card{
+  position: relative;
+  width: 160px;
+  height: 90px;
+  border-radius: 10px;
+  overflow: hidden;            /* ✅ zoom không tràn */
+  text-decoration: none;
+}
+
+.nav-item.has-mega .mega-inner .mega-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* muốn không cắt ảnh => đổi thành contain */
+  display: block;
+  /* opacity: 0.5; */
+  transform: scale(1.001);
+  transition: transform .35s cubic-bezier(.2,.8,.2,1);
+}
+
+
+
+.nav-item.has-mega .mega-inner .mega-card:hover img{
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+/* overlay + chữ */
+.nav-item.has-mega .mega-inner .mega-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.25);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nav-item.has-mega .mega-inner .mega-card span{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  z-index: 2;
+  color:#fff;
+  font-weight: 800;
+  font-size: 16px;
+  text-shadow: 0 10px 20px rgba(0,0,0,.55);
+}
+
+/* ===== LAYOUT: ABOUT (1 cột text) ===== */
+.nav-item.has-mega .mega-inner1{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  min-width: 280px;
+}
+
+.nav-item.has-mega .mega-inner1 .mega-card1{
+  display:block;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: transparent;
+}
+
+.nav-item.has-mega .mega-inner1 .mega-card1 span{
+  display:block;
+  color:#111;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nav-item.has-mega .mega-inner1 .mega-card1:hover{
+  background: rgba(0,0,0,.06);
+}
+
+/* ===== OPEN / ANIMATION ===== */
+.nav-item.has-mega:hover .mega,
+.nav-item.has-mega:hover .mega{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nav-item.has-mega:hover .mega::before,
+.nav-item.has-mega:hover .mega::before{
+  opacity: 1;
+}
+
+@keyframes calendarDrop{
+  0%   { transform: rotateX(-160deg) translateY(-16px); opacity: 0; }
+  70%  { transform: rotateX(10deg) translateY(0); opacity: 1; }
+  100% { transform: rotateX(0deg)  translateY(0); opacity: 1; }
+}
+
+.nav-item.has-mega:hover .mega-inner,
+.nav-item.has-mega:hover .mega-inner1,
+.nav-item.has-mega:hover .mega-inner,
+.nav-item.has-mega:hover .mega-inner1{
+  transform: rotateX(0deg) translateY(0);
+  opacity: 1;
+  animation: calendarDrop .34s cubic-bezier(.2,.85,.2,1) both;
+}
+
+/* ===== MOBILE: không hover, dùng .is-open ===== */
+@media (max-width: 900px){
+  .nav-item.has-mega .mega{
+    position: static;
+    transform: none;
+    max-width: 100%;
+    display: none;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-item.has-mega.is-open .mega{ display:block; }
+  .nav-item.has-mega .mega::before{ display:none; }
+
+  .nav-item.has-mega .mega-inner,
+  .nav-item.has-mega .mega-inner1{
+    transform: none;
+    opacity: 1;
+    animation: none;
+    margin-top: 10px;
+  }
+
+  .nav-item.has-mega .mega-inner{
+    grid-template-columns: repeat(2, 160px);
+    width: max-content;
+  }
+
+  .nav-item.has-mega .mega-inner1{
+    min-width: 0;
+  }
+}
+
+
+

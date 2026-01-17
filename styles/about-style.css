@@ -1,0 +1,378 @@
+/* ===== ABOUT HERO ===== */
+.about-hero{
+  background: #222;
+  height: 30vh;
+  min-height: 220px;        /* tránh quá thấp */
+  display: flex;
+  align-items: center;     /* căn giữa dọc */
+  justify-content: center; /* căn giữa ngang */
+  margin-bottom: 10vh;
+}
+
+.about-title{
+  margin: 0;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: .02em;
+  font-size: clamp(36px, 6vw, 70px); /* 👈 tự co giãn */
+  text-align: center;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 560px){
+  .about-hero{
+    height: 22vh;
+    min-height: 160px;
+    margin-bottom: 60px;
+  }
+}
+
+
+/* ===== WHO WE ARE SECTION ===== */
+.who{
+  background:#fff;
+  padding: 0;
+}
+
+.who-wrap{
+  width: min(1200px, calc(100% - 60px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.05fr 1.25fr; /* trái nhỏ hơn phải */
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT */
+.who-title{
+  margin: 0 0 28px;
+  text-align: center;
+
+  font-family: "Playfair Display", serif; /* nếu muốn giống mẫu "About Us" */
+  font-style: italic; /* nếu muốn giống chữ nghiêng script */
+  font-weight: 700;
+  font-size: 52px;
+  color: #3b7f43; /* xanh giống hình */
+  letter-spacing: .02em;
+}
+
+/* Nếu bạn muốn giống chữ script như hình hơn:
+   thay font-family phía trên bằng:
+   font-family: "Dancing Script", cursive;
+   và bỏ italic
+*/
+
+.who-p{
+  margin: 0 0 18px;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* RIGHT */
+.who-right{
+  width: 100%;
+}
+
+.who-img{
+  width: 100%;
+  height: min(520px, 60vh);
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 980px){
+  .who-wrap{
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .who-title{
+    font-size: 42px;
+  }
+
+  .who-img{
+    height: 360px;
+  }
+}
+
+@media (max-width: 560px){
+  .who{
+    padding: 46px 0;
+  }
+
+  .who-wrap{
+    width: min(1200px, calc(100% - 30px));
+  }
+
+  .who-title{
+    font-size: 34px;
+  }
+
+  .who-p{
+    font-size: 14px;
+  }
+
+  .who-img{
+    height: 260px;
+  }
+}
+
+
+
+/* ===== WHY SECTION ===== */
+.why{
+  background:#fff;
+  padding: 70px 0 90px;
+}
+
+.why-wrap{
+  width: min(1200px, calc(100% - 60px));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-title{
+  margin: 0 0 18px;
+  color: #3b7f43;
+  font-size: 54px;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive; /* giống style chữ xanh */
+}
+
+.why-desc{
+  max-width: 1040px;
+  margin: 0 auto 46px;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* grid 4 cột */
+.why-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.why-card{
+  text-align: center;
+}
+
+.why-ico{
+  height: 64px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+}
+
+.why-ico img{
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  display: block;
+}
+
+.why-h3{
+  margin: 0 0 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+}
+
+.why-p{
+  margin: 0;
+  color: #6b7280;
+  font-size: 14.5px;
+  line-height: 1.9;
+}
+
+/* responsive */
+@media (max-width: 1100px){
+  .why-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 560px){
+  .why-wrap{
+    width: min(1200px, calc(100% - 30px));
+  }
+
+  .why-title{ font-size: 40px; }
+  .why-desc{ font-size: 14px; margin-bottom: 34px; }
+
+  .why-grid{
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+
+
+
+/* ===== OUR HAPPY CUSTOMERS ===== */
+.happy{
+  background:#fff;
+  padding: 60px 0 90px;
+}
+
+.happy-wrap{
+  width: min(1200px, calc(100% - 60px));
+  margin: 0 auto;
+}
+
+.happy-title{
+  text-align: center;
+  margin: 0 0 34px;
+  color: #3b7f43;
+  font-size: 56px;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive; /* giống chữ xanh */
+}
+
+/* 3 cột giống ảnh */
+.happy-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+/* mỗi ô ảnh */
+.happy-item{
+  display:block;
+  background:#eee;
+  overflow:hidden;
+  border-radius: 2px; /* ảnh bạn gần như vuông, bo nhẹ */
+  box-shadow: 0 10px 26px rgba(0,0,0,.08);
+}
+
+.happy-item img{
+  width:100%;
+  height: 260px;         /* chỉnh theo mắt bạn: 240-300 */
+  object-fit: cover;     /* không méo */
+  display:block;
+  transform: scale(1.001);
+  transition: transform .35s cubic-bezier(.2,.8,.2,1);
+}
+
+.happy-item:hover img{
+  transform: scale(1.06);
+}
+
+/* Responsive */
+@media (max-width: 1000px){
+  .happy-grid{ grid-template-columns: repeat(2, 1fr); }
+  .happy-item img{ height: 240px; }
+}
+@media (max-width: 560px){
+  .happy-wrap{ width: min(1200px, calc(100% - 30px)); }
+  .happy-title{ font-size: 42px; margin-bottom: 26px; }
+  .happy-grid{ grid-template-columns: 1fr; }
+  .happy-item img{ height: 220px; }
+}
+
+
+/* ===== GET IN TOUCH ===== */
+.get-touch{
+  position: relative;
+  background: #1b1b1b;
+  color: #cfcfcf;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+/* lớp tối nhẹ (để text nổi) */
+.get-touch .gt-overlay{
+  position:absolute;
+  inset:0;
+  background: radial-gradient(900px 260px at 50% 45%, rgba(0,0,0,.25), rgba(0,0,0,.55));
+  pointer-events:none;
+}
+
+/* hoa văn mờ bên phải (thay url bằng ảnh pattern của bạn) */
+.get-touch .gt-art{
+  position:absolute;
+  right: -120px;
+  top: 50%;
+  width: min(900px, 55vw);
+  height: min(520px, 55vh);
+  transform: translateY(-50%);
+  background: url("./imgs/pattern.png") right center / contain no-repeat;
+  opacity: .14;
+  filter: contrast(110%) saturate(90%);
+  pointer-events:none;
+}
+
+/* nội dung giữa */
+.get-touch .gt-wrap{
+  position: relative;
+  z-index: 1;
+  width: min(980px, calc(100% - 60px));
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* title chữ script xanh */
+.get-touch .gt-title{
+  margin: 0 0 14px;
+  color: #2f8f57;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive; /* hoặc font script bạn thích */
+}
+
+/* mô tả */
+.get-touch .gt-desc{
+  margin: 0 auto 26px;
+  max-width: 880px;
+  line-height: 1.9;
+  font-size: 14px;
+  color: rgba(255,255,255,.55);
+}
+
+.get-touch .gt-mail{
+  color: #2f8f57;
+  text-decoration: none;
+  font-weight: 700;
+}
+.get-touch .gt-mail:hover{ text-decoration: underline; }
+
+/* nút gạch dưới */
+.get-touch .gt-cta{
+  display: inline-block;
+  margin-top: 4px;
+  color: #2f8f57;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .22em;
+  font-size: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(47,143,87,.75);
+}
+.get-touch .gt-cta:hover{
+  border-bottom-color: rgba(47,143,87,1);
+  filter: brightness(.95);
+}
+
+/* responsive */
+@media (max-width: 680px){
+  .get-touch{ padding: 70px 0; }
+  .get-touch .gt-title{ font-size: 46px; }
+  .get-touch .gt-art{
+    right: -220px;
+    width: 90vw;
+    opacity: .10;
+  }
+}
+html, body{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;   /* tránh tràn ngang */
+}

@@ -1,0 +1,139 @@
+<body>
+    <section class="hero-destination">
+        <!-- img làm nền -->
+        <img class="hero-bg-destination" src="/imgs/cambodia.jpg" alt="Cambodia hero" />
+        <!-- overlay tối -->
+        <div class="hero-overlay-destination"></div>
+        <!-- content -->
+        <div class="hero-content-destination">
+            <h1 class="hero-title-destination">Cambodia</h1>
+            <p class="hero-subtitle-destination">Unveiling the Enchanting Kingdom</p>
+        </div>
+    </section>
+
+    <section class="country">
+        <div class="country-wrap" id="countryRoot">
+            <!-- LEFT -->
+            <div class="country-left">
+                <h2 class="exotic-title" id="cTitle">Explore Our Cambodia</h2>
+
+                <div class="country-desc" id="cDesc"></div>
+
+                <button class="country-more" id="cMoreBtn" type="button">Show More</button>
+
+                <div class="country-stats" id="cStats"></div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="country-right">
+                <img class="country-map" id="cMap" alt="Country map" />
+            </div>
+        </div>
+    </section>
+    <section class="best-places">
+        <div class="best-wrap">
+            <h2 class="best-title">Best places to visit</h2>
+
+            <div class="places-grid" id="placesGrid">
+                <!-- JS sẽ render card vào đây -->
+            </div>
+        </div>
+    </section>
+    <section class="holiday-ideas">
+        <div class="hi-wrap">
+            <h2 class="hi-title">Cambodia holiday ideas</h2>
+            <p class="hi-desc">
+                Explore our Cambodia sample itineraries to inspire your travel planning.
+                The itineraries can be easily customised and adapted to your personal interests and preferences.
+            </p>
+
+            <!-- FILTER -->
+            <div class="hi-filter">
+                <input type="text" placeholder="Keywords">
+                <select>
+                    <option>Travel Style</option>
+                </select>
+                <select>
+                    <option>Duration</option>
+                </select>
+                <button>SEARCH</button>
+            </div>
+
+            <!-- GRID -->
+            <div class="hi-grid" id="hiGrid">
+                <!-- CARD -->
+                <article class="hi-card">
+                    <div class="hi-media">
+                        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="">
+                        <button class="hi-fav">♡</button>
+                    </div>
+
+                    <div class="hi-body">
+                        <h3>Heritage Trails of Vietnam and Cambodia in 14 Days</h3>
+                        <p class="hi-meta">
+                            Hanoi, Ba Vi, Pu Luong, Halong Bay, Hue, Hoi An, Siem Reap
+                        </p>
+                        <a class="hi-btn" href="#">View tour</a>
+                    </div>
+                </article>
+
+                <!-- copy card -->
+                <article class="hi-card">
+                    <div class="hi-media">
+                        <img src="https://images.unsplash.com/photo-1558980664-10ea33b9b6d3" alt="">
+                        <button class="hi-fav">♡</button>
+                    </div>
+
+                    <div class="hi-body">
+                        <h3>Cambodia To Vietnam By Waterway Deluxe Tour in 15 Days</h3>
+                        <p class="hi-meta">
+                            Siem Reap, Phnom Penh, Chau Doc, Mekong Delta, Ho Chi Minh city
+                        </p>
+                        <a class="hi-btn" href="#">View tour</a>
+                    </div>
+                </article>
+
+                <article class="hi-card">
+                    <div class="hi-media">
+                        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526" alt="">
+                        <button class="hi-fav">♡</button>
+                    </div>
+
+                    <div class="hi-body">
+                        <h3>Glimpse Of Indochina in 18 Days</h3>
+                        <p class="hi-meta">
+                            Hanoi, Ba Vi, Halong Bay, Ho Chi Minh city, Cu Chi, Siem Reap
+                        </p>
+                        <a class="hi-btn" href="#">View tour</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <a style="margin: 24px auto 0; display: block; width: fit-content; text-align: center;" href="#">View more</a>
+    </section>
+
+
+
+
+    <section class="guide">
+        <div class="guide-wrap">
+            <!-- LEFT: Accordion -->
+            <div class="guide-left">
+                <div class="acc" id="guideAcc">
+
+
+                </div>
+            </div>
+
+            <!-- RIGHT: Image -->
+            <div class="guide-right">
+                <div class="guide-hero">
+                    <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?auto=format&fit=crop&w=1400&q=80"
+                        alt="Travel guide" />
+                    <div class="guide-text">Travel guide</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>

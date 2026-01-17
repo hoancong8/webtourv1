@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box
+}
+/* 
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
+} */
+
+
+/* ===== Places of Interest ===== */
+.poi {
+  background: #fff;
+  padding: 18px 0 38px;
+}
+
+.poi-wrap {
+  width: 88%;
+  /* giống ảnh: content hẹp */
+  margin: 0 auto;
+}
+
+/* title nhỏ, nền xanh, chữ viết tay */
+.poi-title {
+  margin: 0 0 14px;
+  text-align: center;
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.poi-title span {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #2f8f57;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+/* item */
+.poi-item {
+  margin: 0 0 64px;
+}
+
+/* heading nhỏ, in hoa, mỏng giống ảnh */
+.poi-name {
+  margin: 0 0 6px;
+  font-size: 18px;
+  
+  font-weight: 700;
+  color: #111;
+}
+
+/* đoạn mô tả nhỏ, chữ xám */
+.poi-text {
+  margin: 0 0 10px;
+  font-size: 10px;
+  line-height: 1.55;
+  color: #555;
+}
+
+/* ảnh full chiều ngang content */
+.poi-figure {
+  margin: 0;
+  border-radius: 2px;
+  overflow: hidden;
+  height: 100%;
+  background: #eee;
+}
+
+.poi-figure img {
+  width: 100%;
+  height: 75vh;
+  /* đúng vibe ảnh */
+  display: block;
+  object-fit: cover;
+}
+
+/* responsive */
+@media (max-width: 520px) {
+  .poi-title {
+    font-size: 20px;
+  }
+
+  .poi-figure img {
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --green: #2f8f57;
+  --text: #555;
+  --muted: #777;
+  --line: #e9e9e9;
+}
+
+
+
+.wrap {
+  width: 88%;
+  margin: 0 auto;
+  padding: 10px 0 70px;
+}
+
+/* ===== Title script (Hanoi / Travel guides) ===== */
+.script-title {
+  text-align: center;
+  font-family: Allura, "Segoe Script", "Brush Script MT", cursive;
+  color: var(--green);
+  font-size: 42px;
+  font-weight: 400;
+  margin: 18px 0 26px;
+  line-height: 1;
+}
+
+/* ===== Top 2 columns ===== */
+.top-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.lead {
+  font-size: 12.5px;
+  line-height: 1.85;
+  color: #6f6f6f;
+  margin: 0;
+  
+  font-size: 14px;
+}
+
+.map-box {
+  justify-self: end;
+  width: 100%;
+  height: min(800px, 100%);
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: min(800px, 100%);
+  border: 0;
+  display: block;
+}
+
+/* ===== Travel guides section ===== */
+.guides {
+  margin-top: 20vh;
+}
+
+.guides .script-title {
+  margin-top: 45px;
+  margin-bottom: 18px;
+}
+
+.guide-block {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 700;
+
+  color: #333;
+}
+
+.h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 16px 0 6px;
+  color: #636363;
+}
+
+.small-head {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  margin: 0 0 6px;
+}
+
+.para {
+  font-size: 14px;
+  line-height: 1.85;
+  color: #6f6f6f;
+  margin: 0 0 10px;
+  
+}
+
+.ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.ul li {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #666;
+}
+
+.ul b {
+  color: #666;
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .wrap {
+    width: min(1200px, calc(100% - 36px));
+  }
+
+  .top-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .map-box {
+    justify-self: start;
+    width: 100%;
+  }
+
+  .script-title {
+    font-size: 54px;
+  }
+}

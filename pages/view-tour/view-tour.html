@@ -1,0 +1,325 @@
+<body>
+    <section class="tour-hero">
+        <div class="tour-hero__wrap">
+
+            <!-- LEFT: image -->
+            <figure class="tour-hero__media">
+                <img src="https://images.unsplash.com/photo-1513415564515-763d91423bdd?auto=format&fit=crop&w=1600&q=70"
+                    alt="Tour cover" />
+            </figure>
+
+            <!-- RIGHT: info -->
+            <aside class="tour-hero__info">
+                <h1 class="tour-hero__title">
+                    Vietnam Culture and Community<br />
+                    Journey in 12 Days
+                </h1>
+
+                <p class="tour-hero__sub">
+                    From <b>Hanoi</b> to <b>Ho Chi Minh city</b>
+                </p>
+
+                <a class="btn-primary" href="#enquiry">ENQUIRY NOW</a>
+
+                <div class="expert-box">
+                    <img class="expert-box__avatar"
+                        src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=96&q=60"
+                        alt="Expert" />
+                    <div class="expert-box__text">
+                        <div class="expert-box__label">Book with an expert for free:</div>
+                        <div class="expert-box__phone">+84-977-860-338</div>
+                    </div>
+                </div>
+
+                <div class="tour-hero__actions">
+                    <button class="btn-outline" type="button">
+                        <span class="ic">⬇</span> Download
+                    </button>
+
+                    <button class="btn-outline" type="button">
+                        <span class="ic">♡</span> Wishlist
+                    </button>
+                </div>
+
+                <div class="tour-hero__share">
+                    <a class="share-ic" href="#" aria-label="Whatsapp">🟢</a>
+                    <a class="share-ic" href="#" aria-label="Skype">S</a>
+                    <a class="share-ic" href="#" aria-label="Telegram">✈</a>
+                    <a class="share-ic" href="#" aria-label="Chat">💬</a>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+    <section class="tour-mid">
+        <div class="tour-mid__wrap">
+
+            <!-- LEFT -->
+            <div class="tour-left">
+                <h2 class="sec-title">Places You’ll See</h2>
+
+                <!-- Places slider (đơn giản: scroll ngang) -->
+                <div class="places">
+                    <button class="places__nav places__nav--prev" type="button" aria-label="Prev">‹</button>
+
+                    <div class="places__track" id="placesTrack">
+                        <!-- item -->
+                        <article class="place">
+                            <a class="place__media" href="#">
+                                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=70"
+                                    alt="Hanoi">
+                            </a>
+                            <h3 class="place__name">Hanoi</h3>
+                        </article>
+
+                        <article class="place">
+                            <a class="place__media" href="#">
+                                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=70"
+                                    alt="Ninh Binh">
+                            </a>
+                            <h3 class="place__name">Ninh Binh</h3>
+                        </article>
+
+                        <article class="place">
+                            <a class="place__media" href="#">
+                                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=70"
+                                    alt="Halong Bay">
+                            </a>
+                            <h3 class="place__name">Halong Bay</h3>
+                        </article>
+                        <article class="place">
+                            <a class="place__media" href="#">
+                                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=70"
+                                    alt="Halong Bay">
+                            </a>
+                            <h3 class="place__name">Halong Bay</h3>
+                        </article>
+                        <article class="place">
+                            <a class="place__media" href="#">
+                                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=70"
+                                    alt="Halong Bay">
+                            </a>
+                            <h3 class="place__name">Halong Bay</h3>
+                        </article>
+                    </div>
+
+                    <button class="places__nav places__nav--next" type="button" aria-label="Next">›</button>
+                </div>
+
+                <!-- MAP BOX -->
+                <div class="map-box">
+                    <div class="map-box__btn">
+                        <button class="btn-pill" type="button">
+                            <span class="btn-pill__ic">🗺</span>
+                            View Destinations
+                        </button>
+                    </div>
+
+                    <!-- dùng iframe google map / hoặc ảnh map -->
+                    <iframe class="map-box__frame"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=98.0%2C8.0%2C112.5%2C24.0&layer=mapnik"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <section class="itinerary">
+        <div class="it-wrap">
+
+            <h2 class="it-title">Itinerary</h2>
+
+            <div class="it-acc" id="itAcc">
+
+                <!-- INTRO -->
+                <div class="it-item is-open">
+                    <button class="it-btn" type="button" aria-expanded="true">
+                        <span class="it-btn__left">
+                            <span class="it-ic">i</span>
+                            <span class="it-btn__title">Introduction</span>
+                        </span>
+                        <span class="it-arrow">⌃</span>
+                    </button>
+
+                    <div class="it-panel">
+                        <div class="it-panel__inner">
+                            <p class="it-para">
+                                A 12-day classic &amp; sustainable journey that threads Vietnam’s highlights and
+                                community touchpoints:
+                                Hanoi’s heritage and local encounters, rural Ba Vi, UNESCO-listed Ninh Binh, an
+                                overnight cruise on
+                                ethereal Halong Bay, lantern-lit Hoi An, vibrant Saigon, and the Mekong Delta.
+                            </p>
+                            <p class="it-para">
+                                Hands-on moments include a noodle class supporting the STREETS social enterprise in Hoi
+                                An, cycling to
+                                Thanh Dong organic farm with a basket-boat glide through Cam Thanh, the contemporary A O
+                                Show in Saigon,
+                                and a day meeting river communities in the Mekong—balanced with time for cafés, markets,
+                                and Old-Town lanes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 1 -->
+                <div class="it-item is-open">
+                    <button class="it-btn" type="button" aria-expanded="false">
+                        <span class="it-btn__left">
+                            <span class="it-dot"></span>
+                            <span class="it-btn__title">Day 1: HANOI ARRIVAL</span>
+                        </span>
+                        <span class="it-arrow">⌄</span>
+                    </button>
+
+                    <div class="it-panel">
+                        <div class="it-panel__inner">
+                            <div class="it-photos">
+                                <figure class="it-photo">
+                                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=70"
+                                        alt="">
+                                </figure>
+                                <figure class="it-photo">
+                                    <img src="https://images.unsplash.com/photo-1526481280695-3c687fd643ed?auto=format&fit=crop&w=1200&q=70"
+                                        alt="">
+                                </figure>
+                            </div>
+
+                            <p class="it-para">
+                                Upon arrival at Noi Bai Airport, after clearing all customs procedures, please proceed
+                                to exit gate and
+                                look for your driver holding the Realistic Asia signboard with your name on it. If you
+                                cannot locate your
+                                driver, please go to the Airport information counter and call the emergency number (+84)
+                                977-860-338.
+                            </p>
+
+                            <p class="it-para">
+                                Your driver will come to meet you and transfer you to the hotel for check-in and free at
+                                leisure.
+                            </p>
+
+                            <div class="it-included">
+                                <div class="it-included__title">What’s included:</div>
+                                <ul class="it-list">
+                                    <li>Transport</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DAY 2 -->
+                <div class="it-item is-open">
+                    <button class="it-btn" type="button" aria-expanded="false">
+                        <span class="it-btn__left">
+                            <span class="it-dot"></span>
+                            <span class="it-btn__title">Day 2: HANOI HALF DAY CITY &amp; FROM HEART TO HAND (B/L)</span>
+                        </span>
+                        <span class="it-arrow">⌄</span>
+                    </button>
+
+                    <div class="it-panel">
+                        <div class="it-panel__inner">
+                            <div class="it-photos">
+                                <figure class="it-photo">
+                                    <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1200&q=70"
+                                        alt="">
+                                </figure>
+                                <figure class="it-photo">
+                                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=70"
+                                        alt="">
+                                </figure>
+                            </div>
+
+                            <p class="it-para">
+                                Tour the city of Hanoi, with its ochre-coloured colonial buildings, tree-lined
+                                boulevards and scenic lakes.
+                                Stop at the Old Coffee Shop in the Old Quarter to get sharing from your tour guide about
+                                daily life of Hanoian.
+                            </p>
+
+                            <div class="it-included">
+                                <div class="it-included__title">What’s included:</div>
+                                <ul class="it-list">
+                                    <li>Breakfast, Lunch</li>
+                                    <li>Guide</li>
+                                    <li>Transport</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+            </div>
+
+            <!-- RIGHT -->
+            <aside class="tour-right">
+                <!-- How it works -->
+                <div class="panel">
+                    <h3 class="panel__title">How It Works</h3>
+
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step__num">01</div>
+                            <div class="step__txt">
+                                <div class="step__head">Send us your inquiry</div>
+                                <div class="step__sub">&amp; tell us your preferences</div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step__num">02</div>
+                            <div class="step__txt">
+                                <div class="step__head">Get the free quote</div>
+                                <div class="step__sub">within 24 hours from our travel experts</div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step__num">03</div>
+                            <div class="step__txt">
+                                <div class="step__head">Customize and Book</div>
+                                <div class="step__sub">a perfect holiday vacation</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Similar tours -->
+                <h2 class="sec-title sec-title--right">Similar Tours</h2>
+
+                <div class="similar">
+                    <article class="sim-item">
+                        <a class="sim-item__img" href="#">
+                            <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=70"
+                                alt="">
+                        </a>
+                        <div class="sim-item__body">
+                            <a class="sim-item__title" href="#">
+                                Serenity &amp; Spice: A Grand Southeast Asia Escape in 18 Days (Thailand, Vietnam, Bali)
+                            </a>
+                            <div class="sim-item__meta">📍 Bangkok, Ayutthaya, Chiang Mai, Hanoi,...</div>
+                        </div>
+                    </article>
+
+                    <article class="sim-item">
+                        <a class="sim-item__img" href="#">
+                            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=900&q=70"
+                                alt="">
+                        </a>
+                        <div class="sim-item__body">
+                            <a class="sim-item__title" href="#">
+                                Vietnam Aqua Life In 10 Days
+                            </a>
+                            <div class="sim-item__meta">📍 Hanoi, Halong Bay, Hoi An, Ho Chi Minh,...</div>
+                        </div>
+                    </article>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+    
+
+</body>
