@@ -321,7 +321,7 @@ const tourDetailMock = {
             id: "sea-18d-th-vn-bali",
             title:
                 "Serenity & Spice: A Grand Southeast Asia Escape in 18 Days (Thailand, Vietnam, Bali)",
-            meta: "📍 Bangkok, Ayutthaya, Chiang Mai, Hanoi,...",
+            meta: "Bangkok, Ayutthaya, Chiang Mai, Hanoi,...",
             image:
                 "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=70",
             href: "#",
@@ -329,7 +329,7 @@ const tourDetailMock = {
         {
             id: "vn-10d-aqua-life",
             title: "Vietnam Aqua Life In 10 Days",
-            meta: "📍 Hanoi, Halong Bay, Hoi An, Ho Chi Minh,...",
+            meta: "Hanoi, Halong Bay, Hoi An, Ho Chi Minh,...",
             image:
                 "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=900&q=70",
             href: "#",
@@ -337,7 +337,7 @@ const tourDetailMock = {
         {
             id: "vn-8d-north-highlights",
             title: "Northern Highlights: Hanoi – Sapa – Ninh Binh in 8 Days",
-            meta: "📍 Hanoi, Sapa, Ninh Binh",
+            meta: "Hanoi, Sapa, Ninh Binh",
             image:
                 "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=70",
             href: "#",

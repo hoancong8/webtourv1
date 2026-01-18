@@ -154,7 +154,7 @@ window.initExplore = function initExplore() {
     const slider = root.getElementById("impactSlider");
     if (!track || !slider) return;
 
-    // ✅ dữ liệu test giống ảnh
+    // dữ liệu test giống ảnh
     const impactData = [
       {
         title: "Discovering Sustainable Travel in Southeast Asia: Why it Matters and How to Do It",

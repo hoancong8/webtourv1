@@ -144,7 +144,7 @@ function mountBioModal(root, { signal, bios = {} } = {}) {
         document.body.style.overflow = "";
     };
 
-    // ✅ Delegation chỉ trong root
+    // Delegation chỉ trong root
     root.addEventListener("click", (e) => {
         const btn = e.target.closest(".bio-btn");
         if (btn && root.contains(btn)) return open(btn.dataset.bio);
