@@ -1,0 +1,38 @@
+<body>
+    <section class="ready">
+  <div class="ready__wrap">
+    <h2 class="ready__title">Ready To Book Tours</h2>
+
+    <div class="ready__layout">
+      <!-- LEFT FILTER -->
+      <aside class="filter">
+        <div class="filter__block">
+          <h3 class="filter__head">Price</h3>
+
+          <div class="filter__price-meta">
+            <span>min. <b id="minLabel">$500</b></span>
+            <span>max. <b id="maxLabel">$20,000</b></span>
+          </div>
+
+          <input id="priceRange" class="filter__range"
+                 type="range" min="500" max="20000" value="20000" step="50">
+
+          <div class="filter__line"></div>
+        </div>
+
+        <div class="filter__block">
+          <h3 class="filter__head">Must-see countries</h3>
+
+          <div class="filter__checks" id="countryChecks"></div>
+        </div>
+      </aside>
+
+      <!-- RIGHT LIST -->
+      <div class="ready__right">
+        <div class="tour-grid" id="tourGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>

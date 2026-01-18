@@ -1,0 +1,60 @@
+<body>
+    <section class="catpage">
+
+        <!-- HERO -->
+        <header class="cat-hero">
+            <div class="cat-hero__wrap">
+                <h1 class="cat-hero__title" id="catTitle">Culture and History</h1>
+                <p class="cat-hero__desc" id="catDesc">
+                    Immersing yourself in the rich tapestry of ancient traditions and fascinating stories of
+                    civilizations past.
+                    Delve into the heart of diverse cultures, explore historical landmarks, and gain profound insights
+                    into the roots
+                    of our world. Experience the enchanting blend of the past and present, forging unforgettable
+                    memories that
+                    resonate with the essence of humanity.
+                </p>
+            </div>
+        </header>
+
+        <!-- SEARCH BAR -->
+        <div class="cat-search">
+            <div class="cat-search__wrap">
+                <div class="cat-search__row">
+                    <label class="field">
+                        <input id="kwInput" type="text" placeholder="Keywords" />
+                        <span class="field__ic">🔍</span>
+                    </label>
+
+                    <label class="field field--select">
+                        <input id="destInput" type="text" placeholder="Destination" autocomplete="off" />
+                        <span class="field__caret">⌄</span>
+                        <div class="dd" id="destDD" hidden></div>
+                    </label>
+
+                    <label class="field field--select">
+                        <select id="durSelect">
+                            <option value="">Duration</option>
+                            <option value="1-5">1 - 5 days</option>
+                            <option value="6-9">6 - 9 days</option>
+                            <option value="10-14">10 - 14 days</option>
+                            <option value="15-30">15+ days</option>
+                        </select>
+                        <span class="field__caret">⌄</span>
+                    </label>
+
+                    <button class="btn-search" id="btnSearch" type="button">SEARCH</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- LIST -->
+        <div class="cat-list">
+            <div class="cat-list__wrap">
+                <div class="tour-grid" id="tourGrid"></div>
+            </div>
+        </div>
+
+    </section>
+
+</body>

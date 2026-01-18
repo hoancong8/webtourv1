@@ -12,7 +12,11 @@
     "/destinations": "./pages/Destinations/destinations.html",
     "/responsible-travel": "./pages/responsible-travel/responsible-travel.html",
     "/bestplaces": "./pages/Destinations/detail-best-places.html",
-    "/view-tour": "./pages/view-tour/view-tour.html"
+    "/view-tour": "./pages/view-tour/view-tour.html",
+    "/sustainable-experiences": "./pages/responsible-travel/sustainable-experiences.html",
+    "/sustainable-tours": "./pages/responsible-travel/sustainable-tours.html",
+    "/ready-to-book-tours": "./pages/Inspiration/ready-book-tour.html",
+    "/travel-style": "./pages/travel-styles/travel-style.html"
   };
 
   function normalizePath(hash) {
@@ -40,6 +44,7 @@
     try { window.destroyHomeUI?.(); } catch { /* ignore */ }
     try { window.destroyAboutUI?.(); } catch { /* ignore */ }
     try { window.destroyViewTourUI?.(); } catch { /* ignore */ }
+    try { window.ReadyToBook?.destroy?.(); } catch { /* ignore */ }
 
     let html = "";
     try {
@@ -79,6 +84,15 @@
       }
       if( path === "/view-tour") {
         window.initViewTourUI?.();
+      }
+      if (path === "/sustainable-experiences") {
+        window.initSustainableExperiencesData?.();
+      }
+      if (path === "/ready-to-book-tours") {
+        window.ReadyToBook?.init?.();
+      }
+      if (path === "/travel-style") {
+        window.CategoryPage?.init?.();
       }
     });
   }
